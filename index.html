@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Practica Final</title>
+	<link rel="stylesheet" href="style.css">
+	<script defer src="index.js"></script>
+</head>
+<body>
+	<section class="registry-section">
+	   <div class="form-container">
+	     <div class="form-header">
+		     <h2> Create Account </h2>
+		 </div>
+		 <form id="user-form" class="form">
+		     <div class ="form-box">
+			    <label for="username">Nombre</label>
+				<input type="text" class="formulario__input" name="username" id="username" required >
+				<small class="error-text">Rellene este campo</small>
+			 </div>
+			 
+			 <div class ="form-box" >
+			    <label for="email">Email</label>
+				<input type="email" class="formulario__input" name="email" id="email" required>
+				<small class="error-text">Rellene este campo</small>
+				<small class="error-text-email">Email inválido</small>
+				
+			 </div>
+			 
+			 <div class ="form-box">
+			    <label for="clave">Clave</label>
+				<input type="password" class="formulario__input" name="clave" id="clave" required>
+				<small class="error-text">Rellene este campo</small>
+				<small class="error-text-clave">Debe tener más de 8 caracteres</small>
+				
+			 </div>
+			 
+			 <div class ="form-box" >
+			    <label for="confclave">Confirme su clave</label>
+				<input type="password" class="formulario__input" name="confclave" id="confclave" required>
+				<small class="error-text">Rellene este campo</small>
+				<small class="error-text-confclave">Las contraseñas no coinciden</small>
+			 </div>
+			 <button type="submit" id="submit-btn" onclick="singinClick()">Enviar</button>
+		</form>
+	   </div>
+	</section>	
+</body>
+</html>
